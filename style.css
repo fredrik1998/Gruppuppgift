@@ -97,13 +97,43 @@ section .title::after{
 }
 
 /* navbar styling */
-.navbar{
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
-    transition: all 0.3s ease;
+
+.nav-bg {
+    background: #c21717;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #ef3838, #991111);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #ef3838, #991111);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+   
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.fa {
+    padding: 5px;
+    text-align: center;
+    margin: 5px 2px;
+    font-size: 30px;
+    width: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.fa:hover {
+    color: white;
+    opacity: 0.5;
 }
 .navbar.sticky{
     padding: 15px 0;
