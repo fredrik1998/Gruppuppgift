@@ -49,6 +49,7 @@
     <section class="about" id="about">
         <div class="max-width">
             <h2 class="title">About </h2>
+            <div class="border"></div>
             <div class="about-content">
                 
                   </style>
@@ -66,6 +67,7 @@
     <section class="services" id="services">
         <div class="max-width">
             <h2 class="title">Projects</h2>
+            <div class="border"></div>
             <div class="serv-content">
                 <div class="card about-img">
                     <div class="box">
@@ -119,40 +121,19 @@
     
 
     <!-- contact section start -->
-    <section id="contact">
-        <div className="container">
-          <div className="heading-wrapper">
-            <div className="heading">
-              <p className="title">
-                Want to <br />
-                contact me?
-              </p>
-              <p className="separator"></p>
-              <p className="subtitle">
-                Please, use the form below or send an email to {''}
-                <span className="mail">
-                 
-                  fredrik.andren98@gmail.
-                  
-                  com
-                </span>
-                
-              </p>
-            </div>
-          </div>
-          <form id="contact-form" action="#">
-            <input placeholder="Name" name="name" type="text" required />
-            <input placeholder="Email" name="email" type="email" required />
-            <textarea placeholder="Message" type="text" name="message"></textarea>
-            <input className="button" id="submit" value="Submit" type="submit" />
-          </form>
-        </div>
-      </section>>
+    <div class="contact-section" id="contact">
 
+        <h1>Contact Us</h1>
+        <div class="border"></div>
+        <form class="contact-form" action="index.html" method="post">
+          <input type="text" class="contact-form-text" placeholder="Your name">
+          <input type="email" class="contact-form-text" placeholder="Your email">
+          <input type="text" class="contact-form-text" placeholder="Your phone">
+          <textarea class="contact-form-text" placeholder="Your message"></textarea>
+          <input type="submit" class="contact-form-btn" value="Send">
+        </form>
+      </div>
     <!-- footer section start -->
-    <footer>
-      
-    </footer>
     <script src="script.js"></script>
 </body>
 </html>
