@@ -1,10 +1,24 @@
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("hidenav").style.top = "0";
+  } else {
+    document.getElementById("hidenav").style.top = "-70px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
+
+
 $(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script
-        if(this.scrollY > 20){
-            $('.navbar').addClass("sticky");
+        if(this.scrollY > 500){
+            $('nav').addClass(".bg-transparent");
         }else{
-            $('.navbar').removeClass("sticky");
+            $('nav').removeClass(".bg-transparent");
         }
         
         // scroll-up button show/hide script

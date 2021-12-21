@@ -44,6 +44,7 @@ section{
     margin: auto;
 }
 
+
 .about{
      height: 100%;
   min-height: 100vh;
@@ -97,6 +98,22 @@ section .title::after{
 }
 
 /* navbar styling */
+nav {
+    background: #c21717;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #ef3838, #991111);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #ef3838, #991111);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    text-decoration: none !important;
+}
+
+#hidenav {
+    
+    
+    transition: top 0.3s;
+  }
 
 .nav-bg {
     background: #c21717;
@@ -109,9 +126,20 @@ section .title::after{
    
 }
 
+@media only screen and (max-width: 600px) {
+    .offcanvas {
+      width: 100% !important;
+    }
+  }
+
+
+
+
 .nav-link:hover {
     text-decoration: underline;
+    
 }
+
 
 .social-icons {
     position: absolute;
@@ -148,13 +176,21 @@ section .title::after{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
+    text-decoration: none !important;
 }
 .navbar .logo .hire span{
-    color: crimson;
+    color: #fff;
     transition: all 0.3s ease;
+    
 }
 .navbar.sticky .logo .hire span{
     color: #fff;
+    
+}
+
+span:hover {
+    text-decoration: underline;
+    transition: ease-in 3s;
 }
 .navbar .menu li{
     list-style: none;
@@ -247,6 +283,7 @@ section .title::after{
     margin-left: 3px;
     color: white;
     text-align: center;
+    margin: 0 auto;
 }
 .home .home-content .text-3{
     font-size: 40px;
@@ -411,9 +448,9 @@ section .title::after{
 }
 
 .contact-section{
-    background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/envelope.svg?sanitize=true) no-repeat center;
-    background-size: cover;
-    padding: 40px 0;
+    background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/envelope.svg?sanitize=true) no-repeat center !important;
+    background-size: cover !important;
+    padding: 40px 0 !important;
   }
   .contact-section h1{
     text-align: center;
