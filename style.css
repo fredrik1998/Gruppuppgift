@@ -6,17 +6,21 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Overlock', Arial, Helvetica, sans-serif;
+    font-family: "Avenir Next", "Avenir", sans-serif;
 }
 html{
     scroll-behavior: smooth;
+    margin:0;
+  padding:0;
+  max-height:100vh;
+  
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #000;
-    padding-bottom: 100px;
+    background: rgba(1, 1, 1, 0);
+    height: 100%;
   }
 
 /* custom scroll bar */
@@ -56,9 +60,7 @@ section{
   background: #fafafa ;
   background-attachment: fixed;
 }
-.about, .services, .skills, .teams, .contact, footer{
-    font-family: 'Poppins', sans-serif;
-}
+
 .about .about-content, 
 .services .serv-content,
 .skills .skills-content,
@@ -75,7 +77,6 @@ section .title{
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
 }
 section .title::before{
     position: absolute;
@@ -99,28 +100,28 @@ section .title::after{
 
 /* navbar styling */
 nav {
-    background: #c21717;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #ef3838, #991111);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #ef3838, #991111);
+    background: #0b0c10;
+    background: linear-gradient(to bottom, #1f2833 0%, #0b0c10 80%);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: none;
     text-decoration: none !important;
 }
 
+.container-fluid{
+    background: #0b0c10;
+    background: linear-gradient(to bottom, #1f2833 0%, #0b0c10 80%);
+}
+
 #hidenav {
-    
-    
     transition: top 0.3s;
   }
 
 .nav-bg {
-    background: #c21717;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #ef3838, #991111);
+    background: #0b0c10;
+    background: linear-gradient(to bottom, #1f2833 0%, #0b0c10 80%);
+    /* fallback for old browsers *
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #ef3838, #991111);
+
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: none;
    
@@ -132,14 +133,10 @@ nav {
     }
   }
 
-
-
-
 .nav-link:hover {
     text-decoration: underline;
     
 }
-
 
 .social-icons {
     position: absolute;
@@ -311,9 +308,7 @@ span:hover {
 }
 
 /* about section styling */
-.about .title::after{
-    content: "Know more about him";
-}
+
 .about .about-content .left{
     width: 45%;
 }
@@ -366,7 +361,6 @@ span:hover {
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "what i provide";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -446,9 +440,10 @@ span:hover {
         line-height: 38px;
     }
 }
-
 .contact-section{
-    background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/envelope.svg?sanitize=true) no-repeat center !important;
+    background: #0b0c10;
+    background: linear-gradient(to bottom, #1f2833 0%, #0b0c10 80%);
+    background: url(http://wallpaperstock.net/starry-night-sky_wallpapers_33935_2560x1600.jpg);
     background-size: cover !important;
     padding: 40px 0 !important;
   }
@@ -476,7 +471,7 @@ span:hover {
     box-sizing: border-box;
     margin: 16px 0;
     border: 0;
-    background: #111;
+    background: #222;
     padding: 20px 40px;
     outline: none;
     color: #ddd;
@@ -502,3 +497,4 @@ span:hover {
   .contact-form-btn:hover{
     background: #2980b9;
   }
+
