@@ -68,6 +68,7 @@ section{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    
 }
 section .title{
     position: relative;
@@ -132,8 +133,19 @@ nav {
     }
   }
 
+  .btn-close:hover {
+      color: crimson !important;
+      font-size: larger;
+      transition: ease-in-out;
+  }
+
+ 
+
 .nav-link:hover {
     text-decoration: underline;
+    font-size: larger;
+    transition: 0.3s ease-in-out;
+    color: crimson !important;
     
 }
 
@@ -156,8 +168,18 @@ nav {
 }
 
 .fa:hover {
-    color: white;
-    opacity: 0.5;
+    color: crimson;
+    transition: ease-in-out 0.3s;
+}
+.social-about {
+    color: #0b0c10;
+    text-align: center;
+    position: relative;
+}
+
+.social-about:hover {
+    color: crimson;
+    transition: ease-in-out 0.3s;
 }
 .navbar.sticky{
     padding: 15px 0;
@@ -184,9 +206,13 @@ nav {
     
 }
 
-span:hover {
-    text-decoration: underline;
-    transition: ease-in 3s;
+
+
+#names:hover {
+    transform: scale(0.5);
+    transition: ease-in-out 0.3s;
+    color: crimson !important;
+    font-size: 35.5px;
 }
 .navbar .menu li{
     list-style: none;
@@ -308,8 +334,13 @@ span:hover {
 
 /* about section styling */
 
+#about-left #about-right {
+    flex: 1 !important;
+}
+
 .about .about-content .left{
     width: 45%;
+    display: flex !important;
 }
 .about .about-content .left img{
     height: 400px;
@@ -495,5 +526,6 @@ span:hover {
   }
   .contact-form-btn:hover{
     background: #2980b9;
+    transform: scaleX(1.02);
   }
 
