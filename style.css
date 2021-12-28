@@ -164,22 +164,22 @@ nav {
     font-size: 30px;
     width: 30px;
     text-decoration: none;
-    color: white;
+    color: white !important;
 }
 
 .fa:hover {
-    color: crimson;
+    color: crimson !important;
     transition: ease-in-out 0.3s;
 }
 .social-about {
-    color: #0b0c10;
+    color: #0b0c10 !important;
     text-align: center;
     position: relative;
     
 }
 
 .social-about:hover {
-    color: crimson;
+    color: crimson !important;
     transition: ease-in-out 0.3s;
 }
 .navbar.sticky{
