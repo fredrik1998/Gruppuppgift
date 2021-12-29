@@ -37,7 +37,6 @@ body {
     background: #555;
 }
 
-/* all similar content styling codes */
 section{
     padding: 100px 0;
 }
@@ -46,7 +45,6 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-
 
 .about{
      height: 100%;
@@ -61,7 +59,7 @@ section{
 }
 
 .about .about-content, 
-.services .serv-content,
+.projects .serv-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -102,7 +100,6 @@ section .title::after{
 nav {
     background: #0b0c10;
     background: linear-gradient(to bottom, #1f2833 0%, #0b0c10 80%);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: none;
     text-decoration: none !important;
 }
@@ -119,12 +116,7 @@ nav {
 .nav-bg {
     background: #0b0c10;
     background: linear-gradient(to bottom, #1f2833 0%, #0b0c10 80%);
-    /* fallback for old browsers *
-    /* Chrome 10-25, Safari 5.1-6 */
-
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: none;
-   
 }
 
 @media only screen and (max-width: 600px) {
@@ -142,11 +134,10 @@ nav {
  
 
 .nav-link:hover {
-    text-decoration: underline;
+    text-decoration: none;
     font-size: larger;
     transition: 0.3s ease-in-out;
-    color: crimson !important;
-    
+    color: #34495e !important;  
 }
 
 .social-icons {
@@ -168,7 +159,7 @@ nav {
 }
 
 .fa:hover {
-    color: crimson !important;
+    color: #34495e!important;
     transition: ease-in-out 0.3s;
 }
 .social-about {
@@ -207,8 +198,6 @@ nav {
     
 }
 
-
-
 #names:hover {
     transform: scale(0.5);
     transition: ease-in-out 0.3s;
@@ -245,8 +234,8 @@ nav {
     position: fixed;
     height: 45px;
     width: 42px;
-    background: crimson;
-    right: 30px;
+    background: #34495e;
+    left: 30px;
     bottom: 10px;
     text-align: center;
     line-height: 45px;
@@ -286,7 +275,7 @@ nav {
 
 @keyframes stars-move-in {
     from {
-      background-position-y: -100px;
+      background-position-y: -500px;
     }
     to {
       opacity: 1;
@@ -380,20 +369,20 @@ nav {
     background: none;
 }
 
-/* services section styling */
-.services, .teams{
+/* projects section styling */
+.projects, .teams{
     color:#fff;
     background: #111;
 }
-.services .title::before,
+.projects .title::before,
 .teams .title::before{
     background: #fff;
 }
-.services .title::after,
+.projects .title::after,
 .teams .title::after{
     background: #111;
 }
-.services .serv-content .card{
+.projects .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -402,24 +391,24 @@ nav {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover{
-    background: crimson;
+.projects .serv-content .card:hover{
+    box-shadow: 0 0 10px 4px #34495e;
 }
-.services .serv-content .card .box{
+.projects .serv-content .card .box{
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
+.projects .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-.services .serv-content .card i{
+.projects .serv-content .card i{
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
 }
-.services .serv-content .card:hover i{
+.projects .serv-content .card:hover i{
     color: #fff;
 }
-.services .serv-content .card .text{
+.projects .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -439,7 +428,7 @@ nav {
     .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card{
+    .projects .serv-content .card{
         width: 100%;
     }
 }
@@ -485,7 +474,7 @@ nav {
   .border{
     width: 100px;
     height: 10px;
-    background: crimson;
+    background: #34495e;
     margin: 40px auto;
   }
   
@@ -518,7 +507,7 @@ nav {
   .contact-form-btn{
     float: right;
     border: 0;
-    background: crimson;
+    background: #34495e;
     color: #fff;
     padding: 12px 50px;
     border-radius: 20px;
